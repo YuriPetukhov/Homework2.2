@@ -1,7 +1,5 @@
 package JavaCore.OOPEncapsulationAndInheritance;
 
-import javax.print.PrintService;
-
 public class Main {
     public static void main(String[] args) {
         Gryffindor[] gryffindors = {
