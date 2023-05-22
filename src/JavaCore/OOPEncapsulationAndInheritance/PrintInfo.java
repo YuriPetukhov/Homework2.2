@@ -99,8 +99,8 @@ public class PrintInfo {
                 apparateDistance1 = hogwarts1[i].getApparateDistance();
                 magicPower1 = hogwarts1[i].getMagicPower();
             }
-            if (hogwarts1[i].getName().equals(name2)) {
-                apparateDistance2 = hogwarts1[i].getApparateDistance();
+            if (hogwarts2[i].getName().equals(name2)) {
+                apparateDistance2 = hogwarts2[i].getApparateDistance();
                 magicPower2 = hogwarts1[i].getMagicPower();
             }
         }
