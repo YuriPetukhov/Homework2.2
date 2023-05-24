@@ -37,8 +37,8 @@ public class Hufflepuff extends Hogwarts{
 
     @Override
     public String toString() {
-        return "Hufflepuff's student " + getName() + ", magicPower = " + getMagicPower() +
-                ", apparateDistance = " + getApparateDistance() +
+        return "Hufflepuff's student " + getName() + ", magic power = " + getMagicPower() +
+                ", apparate distance = " + getApparateDistance() +
                 ", diligence = " + diligence +
                 ", fidelity = " + fidelity +
                 ", honesty = " + honesty;

@@ -1,6 +1,6 @@
 package JavaCore.OOPEncapsulationAndInheritance;
 
-public class Hogwarts {
+public abstract class Hogwarts {
     private String name;
     private int magicPower;
     private int apparateDistance;
@@ -10,7 +10,6 @@ public class Hogwarts {
         this.magicPower = magicPower;
         this.apparateDistance = apparateDistance;
     }
-
     public String getName() {
         return name;
     }
