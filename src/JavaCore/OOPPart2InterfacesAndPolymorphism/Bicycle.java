@@ -1,5 +1,5 @@
 package JavaCore.OOPPart2InterfacesAndPolymorphism;
 
-public class Bicycle extends MeansOfTransport{
+public class Bicycle extends MeansOfTransport {
 
 }
