@@ -1,6 +1,6 @@
 package JavaCore.OOPPart2InterfacesAndPolymorphism;
 
-public class ServiceStation {
+public class ServiceStation implements EngineCheckable{
     public void check(MeansOfTransport meansOfTransport) {
         if (meansOfTransport != null) {
             System.out.println("Обслуживаем " + meansOfTransport.getModelName());

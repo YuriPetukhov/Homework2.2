@@ -1,12 +1,8 @@
 package JavaCore.OOPPart2InterfacesAndPolymorphism;
 
-public abstract class MeansOfTransport {
+public abstract class MeansOfTransport implements EngineCheckable {
     private String modelName;
     private int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
 
     public String getModelName() {
         return modelName;
@@ -23,10 +19,5 @@ public abstract class MeansOfTransport {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
-    public void checkTrailer(){
-        System.out.println("Проверяем прицеп");
-    }
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
+
 }
