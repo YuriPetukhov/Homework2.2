@@ -23,4 +23,10 @@ public abstract class MeansOfTransport {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
+    public void checkTrailer(){
+        System.out.println("Проверяем прицеп");
+    }
+    public void checkEngine() {
+        System.out.println("Проверяем двигатель");
+    }
 }
