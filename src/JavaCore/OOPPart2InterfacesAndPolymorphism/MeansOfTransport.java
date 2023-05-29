@@ -1,6 +1,6 @@
 package JavaCore.OOPPart2InterfacesAndPolymorphism;
 
-public class MeansOfTransport implements Checkable{
+public abstract class MeansOfTransport implements Checkable{
     private String modelName;
     private int wheelsCount;
 
