@@ -52,5 +52,6 @@ public class Main {
         printInfo.compareTwoHogwartssStudents(ravenclaws, "Marcus Belby", hufflepuffs, "Cedric Diggory");
         printInfo.compareTwoHogwartssStudents(gryffindors, "Hermione Granger", slytherins, "Graham Montagu");
 
+
     }
 }

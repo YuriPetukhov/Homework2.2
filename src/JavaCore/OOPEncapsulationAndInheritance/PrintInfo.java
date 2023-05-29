@@ -121,4 +121,7 @@ public class PrintInfo {
             System.out.println(name1 + " and " + name2 + " have the same transgression distance");
         }
     }
+    public static void test1(int a){
+        System.out.println(a);
+    }
 }
