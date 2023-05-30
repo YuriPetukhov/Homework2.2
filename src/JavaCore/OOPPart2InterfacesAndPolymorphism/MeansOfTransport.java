@@ -1,6 +1,6 @@
 package JavaCore.OOPPart2InterfacesAndPolymorphism;
 
-public abstract class MeansOfTransport implements Checkable{
+public abstract class MeansOfTransport{
     private String modelName;
     private int wheelsCount;
 
@@ -16,7 +16,11 @@ public abstract class MeansOfTransport implements Checkable{
     public void setModelName(String modelName) {
         this.modelName = modelName;
     }
-
+    public void service() {
+        for (int i = 0; i < wheelsCount; i++) {
+            updateTyre();
+        }
+    }
     public int getWheelsCount() {
         return wheelsCount;
     }
@@ -26,6 +30,12 @@ public abstract class MeansOfTransport implements Checkable{
     }
     public void updateTyre() {
         System.out.println("Меняем покрышку");
+    }
+    public void checkEngine(){
+        System.out.println("Проверяем двигатель");
+    }
+    public void checkTrailer(){
+        System.out.println("Проверяем прицеп");
     }
 
 }

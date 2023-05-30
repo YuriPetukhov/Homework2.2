@@ -5,10 +5,10 @@ public class Truck extends MeansOfTransport {
         super(modelName, wheelsCount);
     }
 
-    public void checkTrailer(){
-        System.out.println("Проверяем прицеп");
-    }
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+    @Override
+    public void service() {
+        super.service();
+        checkEngine();
+        checkTrailer();
     }
 }
