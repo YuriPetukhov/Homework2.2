@@ -12,5 +12,9 @@ public class Main {
         } catch (UserRegistrationException e) {
             System.out.println("Registration failed: " + e.getMessage());
         }
+
+        finally {
+            System.out.println("The program has finished its execution");
+        }
     }
 }
