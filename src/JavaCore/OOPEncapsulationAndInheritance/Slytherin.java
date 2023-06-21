@@ -60,12 +60,12 @@ public class Slytherin extends Hogwarts{
 
     @Override
     public String toString() {
-        return "Slytherin's student " + getName() + ", magicPower = " + getMagicPower() +
-                ", apparateDistance = " + getApparateDistance() +
+        return "Slytherin's student " + getName() + ", magic power = " + getMagicPower() +
+                ", apparate distance = " + getApparateDistance() +
                 ", cunning=" + cunning +
                 ", determination=" + determination +
                 ", ambitionint=" + ambitionint +
                 ", resourcefulness=" + resourcefulness +
-                ", lustForPower=" + lustForPower;
+                ", lust for power=" + lustForPower;
     }
 }

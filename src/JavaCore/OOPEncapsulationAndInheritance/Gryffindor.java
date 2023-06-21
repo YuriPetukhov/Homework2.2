@@ -17,7 +17,7 @@ public class Gryffindor extends Hogwarts {
     }
 
     public void setNobility(int nobility) {
-        this.nobility = nobility;
+            this.nobility = nobility;
     }
 
     public int getHonor() {
@@ -37,8 +37,8 @@ public class Gryffindor extends Hogwarts {
     }
     @Override
     public String toString() {
-        return "Gryffindor's student " + getName() + ", magicPower = " + getMagicPower() +
-                ", apparateDistance = " + getApparateDistance() +
+        return "Gryffindor's student " + getName() + ", magic power = " + getMagicPower() +
+                ", apparate distance = " + getApparateDistance() +
                 ", nobility = " + nobility +
                 ", honor = " + honor +
                 ", courage = " + courage;

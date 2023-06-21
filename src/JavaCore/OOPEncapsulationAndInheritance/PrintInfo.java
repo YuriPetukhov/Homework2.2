@@ -2,21 +2,21 @@ package JavaCore.OOPEncapsulationAndInheritance;
 
 public class PrintInfo {
     public void printStudentInfo(Hogwarts[] hogwarts, String name){
-        for(int i = 0; i < hogwarts.length; i++) {
-            if(hogwarts[i].getName().equals(name)) {
-                System.out.println(hogwarts[i].toString());
+        for (Hogwarts hogwart : hogwarts) {
+            if (hogwart.getName().equals(name)) {
+                System.out.println(hogwart.toString());
             }
         }
     }
     public void compareTwoGryffindorsStudents (Gryffindor[] gryffindors, String name1, String name2){
         int sum1 = 0;
         int sum2 = 0;
-        for(int i = 0; i < gryffindors.length; i++){
-            if(gryffindors[i].getName().equals(name1)) {
-                sum1 = gryffindors[i].getNobility() + gryffindors[i].getCourage() + gryffindors[i].getHonor();
+        for (Gryffindor gryffindor : gryffindors) {
+            if (gryffindor.getName().equals(name1)) {
+                sum1 = gryffindor.getNobility() + gryffindor.getCourage() + gryffindor.getHonor();
             }
-            if(gryffindors[i].getName().equals(name2)) {
-                sum2 = gryffindors[i].getNobility() + gryffindors[i].getCourage() + gryffindors[i].getHonor();
+            if (gryffindor.getName().equals(name2)) {
+                sum2 = gryffindor.getNobility() + gryffindor.getCourage() + gryffindor.getHonor();
             }
         }
         if (sum1 > sum2){
@@ -31,12 +31,12 @@ public class PrintInfo {
     public void compareTwoHufflepuffsStudents (Hufflepuff[] hufflepuffs, String name1, String name2) {
         int sum1 = 0;
         int sum2 = 0;
-        for (int i = 0; i < hufflepuffs.length; i++) {
-            if (hufflepuffs[i].getName().equals(name1)) {
-                sum1 = hufflepuffs[i].getDiligence() + hufflepuffs[i].getFidelity() + hufflepuffs[i].getHonesty();
+        for (Hufflepuff hufflepuff : hufflepuffs) {
+            if (hufflepuff.getName().equals(name1)) {
+                sum1 = hufflepuff.getDiligence() + hufflepuff.getFidelity() + hufflepuff.getHonesty();
             }
-            if (hufflepuffs[i].getName().equals(name2)) {
-                sum2 = hufflepuffs[i].getDiligence() + hufflepuffs[i].getFidelity() + hufflepuffs[i].getHonesty();
+            if (hufflepuff.getName().equals(name2)) {
+                sum2 = hufflepuff.getDiligence() + hufflepuff.getFidelity() + hufflepuff.getHonesty();
             }
         }
         if (sum1 > sum2) {
@@ -50,14 +50,14 @@ public class PrintInfo {
     public void compareTwoRavenclawsStudents (Ravenclaw[] ravenclaws, String name1, String name2) {
         int sum1 = 0;
         int sum2 = 0;
-        for (int i = 0; i < ravenclaws.length; i++) {
-            if (ravenclaws[i].getName().equals(name1)) {
-                sum1 = ravenclaws[i].getIntelligence() + ravenclaws[i].getWisdom() + ravenclaws[i].getWit()
-                        + ravenclaws[i].getCreativity();
+        for (Ravenclaw ravenclaw : ravenclaws) {
+            if (ravenclaw.getName().equals(name1)) {
+                sum1 = ravenclaw.getIntelligence() + ravenclaw.getWisdom() + ravenclaw.getWit()
+                        + ravenclaw.getCreativity();
             }
-            if (ravenclaws[i].getName().equals(name2)) {
-                sum2 = ravenclaws[i].getIntelligence() + ravenclaws[i].getWisdom() + ravenclaws[i].getWit()
-                        + ravenclaws[i].getCreativity();
+            if (ravenclaw.getName().equals(name2)) {
+                sum2 = ravenclaw.getIntelligence() + ravenclaw.getWisdom() + ravenclaw.getWit()
+                        + ravenclaw.getCreativity();
             }
         }
         if (sum1 > sum2) {
@@ -71,14 +71,14 @@ public class PrintInfo {
     public void compareTwoSlytherinsStudents (Slytherin[] slytherins, String name1, String name2) {
         int sum1 = 0;
         int sum2 = 0;
-        for (int i = 0; i < slytherins.length; i++) {
-            if (slytherins[i].getName().equals(name1)) {
-                sum1 = slytherins[i].getCunning() + slytherins[i].getDetermination() + slytherins[i].getAmbitionint()
-                        + slytherins[i].getResourcefulness() + slytherins[i].getLustForPower();
+        for (Slytherin slytherin : slytherins) {
+            if (slytherin.getName().equals(name1)) {
+                sum1 = slytherin.getCunning() + slytherin.getDetermination() + slytherin.getAmbitionint()
+                        + slytherin.getResourcefulness() + slytherin.getLustForPower();
             }
-            if (slytherins[i].getName().equals(name2)) {
-                sum2 = slytherins[i].getCunning() + slytherins[i].getDetermination() + slytherins[i].getAmbitionint()
-                        + slytherins[i].getResourcefulness() + slytherins[i].getLustForPower();
+            if (slytherin.getName().equals(name2)) {
+                sum2 = slytherin.getCunning() + slytherin.getDetermination() + slytherin.getAmbitionint()
+                        + slytherin.getResourcefulness() + slytherin.getLustForPower();
             }
         }
         if (sum1 > sum2) {
@@ -94,15 +94,17 @@ public class PrintInfo {
         int apparateDistance2 = 0;
         int magicPower1 = 0;
         int magicPower2 = 0;
-        for (int i = 0; i < hogwarts1.length; i++){
+        int i = 0;
+        while (i < hogwarts1.length) {
             if (hogwarts1[i].getName().equals(name1)) {
                 apparateDistance1 = hogwarts1[i].getApparateDistance();
                 magicPower1 = hogwarts1[i].getMagicPower();
             }
-            if (hogwarts1[i].getName().equals(name2)) {
-                apparateDistance2 = hogwarts1[i].getApparateDistance();
+            if (hogwarts2[i].getName().equals(name2)) {
+                apparateDistance2 = hogwarts2[i].getApparateDistance();
                 magicPower2 = hogwarts1[i].getMagicPower();
             }
+            i++;
         }
         if (magicPower1 > magicPower2) {
             System.out.println(name1 + " has more magic power than " + name2);
@@ -118,5 +120,8 @@ public class PrintInfo {
         } else {
             System.out.println(name1 + " and " + name2 + " have the same transgression distance");
         }
+    }
+    public static void test1(int a){
+        System.out.println(a);
     }
 }

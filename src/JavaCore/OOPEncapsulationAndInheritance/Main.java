@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Gryffindor[] gryffindors = {
                 new Gryffindor("Harry Potter", 6, 7,
-                        90, 85, 70),
+                        98, 85, 70),
                 new Gryffindor("Hermione Granger", 5, 6,
                         95, 80, 65),
                 new Gryffindor("Ron Weasley", 4, 3,
@@ -51,5 +51,7 @@ public class Main {
         printInfo.compareTwoHogwartssStudents(gryffindors, "Harry Potter", slytherins, "Draco Malfoy");
         printInfo.compareTwoHogwartssStudents(ravenclaws, "Marcus Belby", hufflepuffs, "Cedric Diggory");
         printInfo.compareTwoHogwartssStudents(gryffindors, "Hermione Granger", slytherins, "Graham Montagu");
+
+
     }
 }
